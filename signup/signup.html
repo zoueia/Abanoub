@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>signup</title>
+</head>
+
+<body>
+    <div id="signup_wrapper">
+        <div id="signup">
+            <img src="./logo.svg" alt="" class="logo">
+            <h1>Sign up</h1>
+            <span id="Required">* Required</span>
+            <div class="input_field">
+                <input type="text" id="username" placeholder="username*">
+                <span class="error" hidden>This field is required please enter username</span>
+            </div>
+            <div class="input_field">
+                <input type="text" id="email" placeholder="email*">
+                <span class="error" hidden>This field is required please enter your email</span>
+            </div>
+            <div class="input_field">
+                <input type="text" id="password" placeholder="password*">
+                <span class="error" hidden>This field is required please enter your password</span>
+                <span class="error weak_pw" hidden>very weak password</span>
+                <div class="check_pw">
+                    <ul>
+                        <li id="check_special_char">
+                            <img src="./x.svg" alt="">
+                            <span class="check" >one special character</span>
+                        </li>
+                        <li id="check_case">
+                            <img src="./x.svg" alt="">
+                            <span class="check" >one upper letter</span>
+                        </li>
+                        <li id="check_min_char">
+                            <img src="./x.svg" alt="">
+                            <span class="check" >at least 8 characters</span>
+                        </li>
+                        <li id="check_max_char">
+                            <img src="./done.svg" alt="">
+                            <span class="check" >maximum 15 character</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="signup_check_box">
+                <input type="checkbox">
+                <span id="recieve_emails">Recieve our new offers and new arrivals</span>
+            </div>
+            <button id="signup_with_google"><img src="./google-icon.svg" alt=""> Signup with google</button>
+            <button id="signup_submit">Create account</button>
+            <a id="signup_signin">You already have an account? signin</a>
+        </div>
+    </div>
+
+</body>
+</html>
