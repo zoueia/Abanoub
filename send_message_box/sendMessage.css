@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap");
+html {
+  font-family: 'Inter', sans-seri;
+}
+
+body, span, button, div {
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #2C5644;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.small_font {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+*, *:before, *:after, body {
+  font-family: 'Inter', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 50px;
+  border: 0px;
+  background-color: #2C5644;
+}
+
+span {
+  color: #3E3E3E;
+}
+
+#send_message_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100%;
+  top: 0;
+  background-color: rgba(212, 212, 212, 0.322);
+  z-index: 10;
+  position: fixed;
+  min-width: 100vw;
+}
+
+#send_message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 43rem;
+  padding: 3.5vw;
+  background-color: white;
+  border: 1px solid #EBFFF6;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  #send_message {
+    margin: 6vw;
+  }
+}
+
+#send_message .toggel_box {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: transparent;
+  width: auto;
+  padding: 5px;
+}
+
+#send_message .toggel_box img {
+  width: 5rem;
+  height: 5rem;
+}
+
+#send_message .toggel_box:hover {
+  background-color: #EBFFF6;
+}
+
+#send_message h1 {
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+}
+
+#send_message .input_field textarea {
+  width: 100%;
+  margin-top: 30px;
+  padding: 2rem 2rem 5px 2rem;
+  background: #E8E8E8;
+  border-radius: 1rem;
+  color: #3E3E3E;
+  border: 0;
+  resize: none;
+}
+
+#send_message .input_field textarea:focus {
+  outline: 2px solid #EBFFF6;
+}
+
+#send_message .input_field textarea:focus::-webkit-input-placeholder {
+  color: #E8E8E8;
+}
+
+#send_message .input_field textarea:focus:-ms-input-placeholder {
+  color: #E8E8E8;
+}
+
+#send_message .input_field textarea:focus::-ms-input-placeholder {
+  color: #E8E8E8;
+}
+
+#send_message .input_field textarea:focus::placeholder {
+  color: #E8E8E8;
+}
+
+#send_message .input_field .error {
+  color: #FE6969;
+  font-size: 1.4rem;
+}
+
+#send_message #send_submit {
+  color: #fff;
+  margin-top: 2.5rem;
+}
+
+#send_message #send_submit:hover {
+  background-color: #40705b;
+}
+/*# sourceMappingURL=sendMessage.css.map */

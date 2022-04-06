@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap');
+$main-color : #2C5644;
+$sec-color : #FFE164;
+$third-color : #E8E8E8;
+$imp-hint : #186273;
+$alerts-color : #FE6969;
+$text-color: #3E3E3E;
+$white-color : #fff;
+$black-color : #000;
+$input-focus : #EBFFF6;
+$hover-button :#40705b;
+
+html { 
+       font-family: 'Inter', sans-seri;
+     } 
+
+body,span,button,div { font-size: 1.6rem; font-weight: normal; color: $main-color;}
+h1 { font-size: 2.5rem; font-weight: bold; }
+.small_font { font-size: 1.4rem; font-weight: normal; }      
+
+
+*, *:before, *:after, body {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+  }
+
+  button{
+      width: 100%;
+      padding: 10px;
+      border-radius: 50px;
+      border: 0px;
+      background-color: $main-color;
+  }
+
+  span{
+    color: $text-color;
+    }
+
+  #send_message_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    top: 0;
+    background-color: rgba(212, 212, 212, 0.322);
+    z-index: 10;
+    position: fixed;
+    min-width: 100vw;
+  }
+
+#send_message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 43rem;
+    padding: 3.5vw;
+    background-color: white;
+    border: 1px solid $input-focus;
+    border-radius: 1rem;
+    @media screen and (max-width: 500px) {
+        margin: 6vw;
+    }
+    .toggel_box{
+        align-self: flex-end;
+        background-color: transparent;
+        width: auto;
+        padding: 5px;
+        img{
+            width: 5rem;
+            height: 5rem;
+        }
+        &:hover{
+            background-color: $input-focus;
+        }
+        }
+    h1{
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: 0.05em;
+    }
+    .input_field{
+        textarea{
+            width: 100%;
+            margin-top: 30px;
+            padding: 2rem 2rem 5px 2rem;
+            background: $third-color;
+            border-radius: 1rem;
+            color: $text-color;
+            border: 0;
+            resize: none;
+        }
+        textarea:focus{
+            outline: 2px solid $input-focus;
+            &::placeholder{
+                color: $third-color;
+            }
+        }
+        .error{
+            color: $alerts-color;
+            font-size: 1.4rem;
+        }
+    } 
+    #send_submit{
+        color: $white-color;
+        margin-top: 2.5rem;
+        &:hover{
+            background-color: $hover-button;
+         }
+    }
+}
+
+
+
