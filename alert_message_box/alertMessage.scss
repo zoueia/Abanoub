@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap');
+$main-color : #2C5644;
+$sec-color : #FFE164;
+$third-color : #E8E8E8;
+$imp-hint : #186273;
+$alerts-color : #FE6969;
+$text-color: #3E3E3E;
+$white-color : #fff;
+$black-color : #000;
+$input-focus : #EBFFF6;
+$hover-button :#40705b;
+
+html { 
+       font-family: 'Inter', sans-seri;
+     } 
+
+body,span,button,div { font-size: 1.6rem; font-weight: normal; color: $main-color;}
+h1 { font-size: 2.5rem; font-weight: bold; }
+.small_font { font-size: 1.4rem; font-weight: normal; }      
+
+
+*, *:before, *:after, body {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+  }
+
+  button{
+      width: 100%;
+      padding: 10px;
+      border-radius: 50px;
+      border: 0px;
+      background-color: $main-color;
+  }
+
+  span{
+    color: $text-color;
+    }
+
+  #alert_message_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    top: 0;
+    background-color: rgba(212, 212, 212, 0.322);
+    z-index: 10;
+    position: fixed;
+    min-width: 100vw;
+  }
+
+#alert_message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 43rem;
+    padding: 5vw 5vw 3vw 5vw;
+    background-color: $white-color;
+    border: 1px solid $input-focus;
+    border-radius: 1rem;
+    @media screen and (max-width: 500px) {
+        margin: 6vw;
+    }
+    h1{
+        font-size: 1.6rem;
+        font-weight: 900;
+        line-height: 150%;
+        letter-spacing: 0.05em;
+        margin-top: 0;
+    }
+    .submit_answer{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2rem;
+        button{
+            padding: 0;
+            background-color: transparent;
+            text-align: end;
+            font-weight: 500;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+
+
