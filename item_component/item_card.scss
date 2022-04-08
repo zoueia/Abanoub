@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap');
+$main-color : #2C5644;
+$sec-color : #FFE164;
+$third-color : #E8E8E8;
+$imp-hint : #186273;
+$alerts-color : #FE6969;
+$text-color: #3E3E3E;
+$white-color : #fff;
+$black-color : #000;
+$input-focus : #EBFFF6;
+$hover-button :#40705b;
+
+html { 
+       font-family: 'Inter', sans-seri;
+     } 
+
+body,span,button,div { font-size: 1.6rem; font-weight: normal; color: $main-color;}
+h1 { font-size: 2.5rem; font-weight: bold; }
+.small_font { font-size: 1.4rem; font-weight: normal; }      
+
+
+*, *:before, *:after {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+  }
+
+  button{
+      width: 100%;
+      padding: 10px;
+      border-radius: 50px;
+      border: 0px;
+      background-color: $main-color;
+  }
+
+  span{
+    color: $text-color;
+    }
+
+    #item_card_wrapper{
+      margin: 5vw;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+      gap: 3rem;
+      justify-items: center;
+      #item_card{
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 35rem;
+        .item_image{
+          width: 100%;
+          margin-bottom: 1.5rem;
+        }
+        .item_title{
+          font-weight: 500;
+          height: 7rem;
+          overflow:hidden;
+          text-overflow:ellipsis; 
+          .item_dis{
+            font-weight: 300;
+          }
+        }
+        .rating{
+          padding: 0;
+          background-color: transparent;
+          width: auto;
+          margin-bottom: 1rem;
+          &:focus{
+            .rating_droplist{display: block;}
+          }
+          img{}
+          .rating_droplist{
+            display: none;
+            position: absolute;
+            right: 0;
+            z-index: 10;
+          }
+        }
+        .price_offers{
+          display: flex;
+          width: 100%;
+          .price{
+            font-weight: 900;
+            flex-grow: 1;
+          }
+          .offer{
+            flex-grow: 5;
+            span{}
+            img{
+              position: absolute;
+              left: -10px;
+            }
+          }
+        }
+        .stock_state{
+          color: $imp-hint;
+        }
+        .add_this_to_cart{
+          position: absolute;
+          bottom: 5px;
+          right: 0px;
+          img{
+            max-width: 5rem;
+            &:hover{
+              max-width: 5.5rem;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 350px) {
+        grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+    }
+    }
