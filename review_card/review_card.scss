@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap');
+$main-color : #2C5644;
+$sec-color : #FFE164;
+$third-color : #E8E8E8;
+$imp-hint : #186273;
+$alerts-color : #FE6969;
+$text-color: #3E3E3E;
+$white-color : #fff;
+$black-color : #000;
+$input-focus : #EBFFF6;
+$hover-button :#40705b;
+
+html { 
+       font-family: 'Inter', sans-seri;
+     } 
+
+body,span,button,div { font-size: 1.6rem; font-weight: normal; color: $main-color;}
+h1 { font-size: 2.5rem; font-weight: bold; }
+.small_font { font-size: 1.4rem; font-weight: normal; }      
+
+
+*, *:before, *:after, body {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+  }
+
+  button{
+      width: 100%;
+      padding: 10px;
+      border-radius: 50px;
+      border: 0px;
+      background-color: $main-color;
+  }
+
+  span{
+    color: $text-color;
+    }
+
+
+#review_card_wrapper{
+padding: 0px 7.4vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-width: 100vw;
+}
+
+#review_card{
+    margin: 15px 0px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+    color: $black-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 5vw 5vw 3vw 5vw;
+    background-color: $white-color;
+    border: 1px solid $input-focus;
+    border-radius: 1rem;
+    @media screen and (max-width: 500px) {
+        margin: 6vw;
+    }
+    h1{
+        font-size: 1.6rem;
+        font-weight: 900;
+        line-height: 150%;
+        letter-spacing: 0.05em;
+        margin: 0;
+    }
+    #review_date{
+        font-weight: lighter;
+    }
+    #review_body{
+        display: flex;
+        margin-top: 1rem;
+        &::before{
+            content: url('./review_arrow.svg');
+            padding-right: 1rem;
+        }
+    }
+    .review_helpful{
+        color: $black-color;
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        button{
+            width: auto;
+            padding: 0;
+            background-color: transparent;
+            font-weight: 500;
+            box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            border: 1px solid #E8E8E8;
+            padding: 1rem;
+        }
+        span{
+            flex-grow: 1;
+            text-align: end;
+            font-weight: 500;
+        }
+    }
+}
+
+
+

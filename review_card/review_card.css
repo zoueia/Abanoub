@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap");
+html {
+  font-family: 'Inter', sans-seri;
+}
+
+body, span, button, div {
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #2C5644;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.small_font {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+*, *:before, *:after, body {
+  font-family: 'Inter', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 50px;
+  border: 0px;
+  background-color: #2C5644;
+}
+
+span {
+  color: #3E3E3E;
+}
+
+#review_card_wrapper {
+  padding: 0px 7.4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 100vw;
+}
+
+#review_card {
+  margin: 15px 0px;
+  -webkit-box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 5vw 5vw 3vw 5vw;
+  background-color: #fff;
+  border: 1px solid #EBFFF6;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  #review_card {
+    margin: 6vw;
+  }
+}
+
+#review_card h1 {
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+#review_card #review_date {
+  font-weight: lighter;
+}
+
+#review_card #review_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+#review_card #review_body::before {
+  content: url("./review_arrow.svg");
+  padding-right: 1rem;
+}
+
+#review_card .review_helpful {
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+#review_card .review_helpful button {
+  width: auto;
+  padding: 0;
+  background-color: transparent;
+  font-weight: 500;
+  -webkit-box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: 1px solid #E8E8E8;
+  padding: 1rem;
+}
+
+#review_card .review_helpful span {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: end;
+  font-weight: 500;
+}
+/*# sourceMappingURL=review_card.css.map */
