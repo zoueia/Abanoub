@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap");
+html {
+  font-family: 'Inter', sans-seri;
+}
+
+body, span, button, div {
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #2C5644;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.small_font {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+*, *:before, *:after, body {
+  font-family: 'Inter', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 50px;
+  border: 0px;
+  background-color: #2C5644;
+}
+
+span {
+  color: #3E3E3E;
+}
+
+#alert_message_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100%;
+  padding: 7.4vw 7.4vw;
+  border-radius: 5px;
+}
+
+#alert_message_wrapper .card {
+  width: 100%;
+  padding: 3rem;
+  background-color: #EBFFF6;
+}
+
+#alert_message_wrapper .btn-primary {
+  border-radius: 50px;
+  color: #2C5644;
+  background-color: transparent;
+  border: 1px solid #2C5644;
+}
+
+#alert_message_wrapper h5 {
+  font-size: 2.5rem;
+}
+/*# sourceMappingURL=state_cards.css.map */
