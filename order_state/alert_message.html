@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order_state.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>order_state</title>
+</head>
+
+<body>
+    <div id="order_state_wrapper">
+        <ul id="order_state">
+            <li id="Order_status"><span>Order status</span><span class="the_value">in the way</span></li>
+            <li id="Order_date"><span>Order status</span><span class="the_value">in the way</span></li>
+            <li id="Payment">
+                Payment <button tabindex="0"><img src="./small_arrow.svg" alt=""></button>
+                <ul>
+                    <li id="payment_method"><span>payment method</span><span class="the_value">cash</span></li>
+                    <li id="Items_price"><span>Items price</span><span class="the_value">1450EGP</span></li>
+                    <li id="shipping_fees"><span>shipping fees</span><span class="the_value">50EGP</span></li>
+                    <li id="total"><span>total</span><span class="the_value">1500EGP</span></li>
+                </ul>
+            </li>
+            <li id="items">
+                item <button tabindex="0"><img src="./small_arrow.svg" alt=""></button>
+                <ul>
+                    <li class="item"><span>the name of this item</span><span class="the_value">the price</span></li>
+                    <li class="item"><span>the name of this item</span><span class="the_value">the price</span></li>
+                </ul>
+            </li>
+        </ul>
+        <button id="cancle_order">Cancel this order</button>
+    </div>
+
+</body>
+</html>

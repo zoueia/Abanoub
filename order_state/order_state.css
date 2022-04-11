@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap");
+html {
+  font-family: 'Inter', sans-seri;
+}
+
+body, span, button, div {
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #2C5644;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.small_font {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+*, *:before, *:after, body {
+  font-family: 'Inter', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 50px;
+  border: 0px;
+  background-color: #2C5644;
+}
+
+span {
+  color: #3E3E3E;
+}
+
+#order_state_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #FFE164;
+  min-width: 100vw;
+  padding-top: 1.5rem;
+}
+
+#order_state {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.6rem;
+  padding: 0 7.4vw;
+  list-style: none;
+}
+
+#order_state span {
+  font-weight: 500;
+  color: #000;
+}
+
+#order_state li {
+  margin-bottom: .5rem;
+  color: #000;
+  font-weight: 500;
+}
+
+#order_state #Order_status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#order_state #Order_date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#order_state #items button, #order_state #Payment button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: auto;
+}
+
+#order_state #items button:focus ~ ul, #order_state #Payment button:focus ~ ul {
+  display: block;
+}
+
+#order_state #items ul, #order_state #Payment ul {
+  list-style: none;
+  display: none;
+}
+
+#order_state #items ul #total, #order_state #items ul #shipping_fees, #order_state #items ul #Items_price, #order_state #items ul #payment_method, #order_state #Payment ul #total, #order_state #Payment ul #shipping_fees, #order_state #Payment ul #Items_price, #order_state #Payment ul #payment_method {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+#order_state #items ul #total span, #order_state #items ul #shipping_fees span, #order_state #items ul #Items_price span, #order_state #items ul #payment_method span, #order_state #Payment ul #total span, #order_state #Payment ul #shipping_fees span, #order_state #Payment ul #Items_price span, #order_state #Payment ul #payment_method span {
+  font-weight: 300;
+}
+
+#order_state #items ul {
+  list-style: none;
+  display: none;
+}
+
+#order_state #items ul .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+#order_state #items ul .item span {
+  font-weight: 300;
+}
+
+#cancle_order {
+  background-color: #fff;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: auto;
+  padding: .5rem 1.5rem;
+  border: 0px;
+  margin: 1.5rem 7.4vw;
+}
+
+#cancle_order:active {
+  border: 2px solid transparent;
+}
+
+.the_value {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: end;
+}
+/*# sourceMappingURL=order_state.css.map */
