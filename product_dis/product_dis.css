@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap");
+html {
+  font-family: 'Inter', sans-seri;
+}
+
+body, span, button, div {
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #2C5644;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.small_font {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+*, *:before, *:after, body {
+  font-family: 'Inter', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+
+button {
+  width: auto;
+  padding: 10px;
+  border-radius: 50px;
+  border: 0px;
+  background-color: #2C5644;
+}
+
+span {
+  color: #3E3E3E;
+  font-weight: 500;
+}
+
+.dis_page_wrapper {
+  padding: 0 7.4vw;
+  width: 100%;
+  border-bottom: 2px solid #E8E8E8;
+  padding-bottom: 7.4vw;
+}
+
+.dis_page_wrapper .dis_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dis_page_wrapper .dis_page .photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+  margin-right: 44px;
+}
+
+.dis_page_wrapper .dis_page .photos .main_pic {
+  max-width: 600px;
+}
+
+.dis_page_wrapper .dis_page .photos .rest_imgs {
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  gap: 5%;
+  -ms-grid-columns: (minmax(105px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
+}
+
+.dis_page_wrapper .dis_page .photos .rest_imgs img {
+  max-width: 100%;
+}
+
+.dis_page_wrapper .dis_page .photos .rest_imgs img:focus {
+  border: 4px solid #FFE164;
+}
+
+.dis_page_wrapper .dis_page .details111 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.dis_page_wrapper .dis_page .details111 .item_title {
+  max-height: 400px;
+  overflow: hidden;
+  padding: 0px 0px 30px 0px;
+}
+
+.dis_page_wrapper .dis_page .details111 .price_offers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0px 5px 0px;
+}
+
+.dis_page_wrapper .dis_page .details111 .price_offers .price {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.dis_page_wrapper .dis_page .details111 .price_offers .offer {
+  margin: 20px 50px;
+}
+
+.dis_page_wrapper .dis_page .details111 .price_offers .offer img {
+  position: absolute;
+  right: 0;
+}
+
+.dis_page_wrapper .dis_page .details111 .rating {
+  background-color: transparent;
+  border: 0;
+  padding-bottom: 10px;
+}
+
+.dis_page_wrapper .dis_page .details111 .add_to_cart {
+  min-width: 28.5rem;
+  max-width: 50%;
+  background-color: #FFE164;
+  border: none;
+  border-radius: 100px;
+  margin: 50px 0;
+  vertical-align: middle;
+}
+
+.dis_page_wrapper .dis_page .details111 .add_to_cart:active {
+  border: 2px solid white;
+}
+
+.dis_page_wrapper .dis_page .details111 .add_to_cart span {
+  font-weight: 900;
+}
+
+.dis_page_wrapper .dis_page .details111 .add_to_cart img {
+  padding-left: 10px;
+}
+
+.dis_page_wrapper .dis_page .details111 .rated_reviews {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.dis_page_wrapper .dis_page .details111 .rated_reviews .go_reviews {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: end;
+  color: #186273;
+}
+
+@media screen and (max-width: 1000px) {
+  .dis_page_wrapper .dis_page {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .dis_page_wrapper .dis_page .add_to_cart {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+/*# sourceMappingURL=product_dis.css.map */
