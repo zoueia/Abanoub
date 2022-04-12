@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="deliveryInfo_payment.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>signup</title>
+</head>
+
+<body>
+    <div id="deliveryInfo_payment_wrapper">
+        <div id="deliveryInfo_payment">
+            <span class="the_action" >Please enter your shipping address</span>
+            <span id="Required">* Required</span>
+            <div class="input_field">
+                <input type="text" id="address" placeholder="address*">
+                <span class="error" hidden>This field is required please enter shipping address</span>
+            </div>
+            <div class="input_field">
+                <input type="text" id="street_no" placeholder="Street no.">
+                <span class="error" hidden>numbers only</span>
+                <span class="error" hidden>max 5 numbers</span>
+            </div>
+            <div class="input_field">
+                <input type="text" id="landmark" placeholder="Landmark*">
+                <span class="error" hidden>This field is required please enter your password</span>
+            </div>
+            <div id="checkbox">
+                <input type="checkbox">
+                <span id="quick_delivery">recive order tomorrow with +EGP20 fees</span>
+            </div>
+            <button id="continue_payment">continue</button>
+        </div>
+    </div>
+
+</body>
+</html>
