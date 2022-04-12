@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap");
+html {
+  font-family: 'Inter', sans-seri;
+}
+
+body, span, button, div {
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #2C5644;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.small_font {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+*, *:before, *:after, body {
+  font-family: 'Inter', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 50px;
+  border: 0px;
+  background-color: #2C5644;
+}
+
+span {
+  color: #3E3E3E;
+}
+
+#verifyPhone_payment_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  margin: 5rem 0;
+}
+
+#verifyPhone_payment_wrapper #verifyPhone_payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#verifyPhone_payment_wrapper #verifyPhone_payment .pack_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#verifyPhone_payment_wrapper #verifyPhone_payment .pack_button input {
+  width: 100%;
+  padding: 10px 20px;
+  background: #E8E8E8;
+  border-radius: 50px 0px 0px 50px;
+  color: #3E3E3E;
+  border: 0;
+}
+
+#verifyPhone_payment_wrapper #verifyPhone_payment .pack_button input:focus {
+  outline: 2px solid #EBFFF6;
+}
+
+#verifyPhone_payment_wrapper #verifyPhone_payment .pack_button .verify {
+  background-color: #FFE164;
+  color: #3E3E3E;
+  border-radius: 0px 50px 50px 0px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border: 1px solid #FFE164;
+}
+
+#verifyPhone_payment_wrapper #verifyPhone_payment .pack_button .verify:active {
+  border: 0;
+}
+
+#verifyPhone_payment_wrapper #verifyPhone_payment .error {
+  color: #FE6969;
+  font-size: 1.4rem;
+}
+
+#verifyPhone_payment_wrapper #verifyPhone_payment .the_action {
+  font-weight: 500;
+}
+
+#verifyPhone_payment_wrapper #verifyPhone_payment span {
+  margin: 8px;
+}
+/*# sourceMappingURL=verifyPhone_payment.css.map */
