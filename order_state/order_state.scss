@@ -80,7 +80,7 @@ h1 { font-size: 2.5rem; font-weight: bold; }
         ul{
             list-style: none;
             display: none;
-            #total,#shipping_fees,#Items_price,#payment_method{
+            li{
                 display: flex;
                 list-style: none;
                 span{

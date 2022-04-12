@@ -104,14 +104,14 @@ span {
   display: none;
 }
 
-#order_state #items ul #total, #order_state #items ul #shipping_fees, #order_state #items ul #Items_price, #order_state #items ul #payment_method, #order_state #Payment ul #total, #order_state #Payment ul #shipping_fees, #order_state #Payment ul #Items_price, #order_state #Payment ul #payment_method {
+#order_state #items ul li, #order_state #Payment ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-#order_state #items ul #total span, #order_state #items ul #shipping_fees span, #order_state #items ul #Items_price span, #order_state #items ul #payment_method span, #order_state #Payment ul #total span, #order_state #Payment ul #shipping_fees span, #order_state #Payment ul #Items_price span, #order_state #Payment ul #payment_method span {
+#order_state #items ul li span, #order_state #Payment ul li span {
   font-weight: 300;
 }
 
