@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap");
+html {
+  font-family: 'Inter', sans-seri;
+}
+
+body, span, button, div {
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #2C5644;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.small_font {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+*, *:before, *:after, body {
+  font-family: 'Inter', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 50px;
+  border: 0px;
+  background-color: #2C5644;
+}
+
+span {
+  color: #3E3E3E;
+}
+
+#orders_filter_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 7.4vw;
+  color: #3E3E3E;
+}
+
+#orders_filter_wrapper .dropdown #dropdownMenuButton {
+  background-color: #FFE164;
+  width: auto;
+  vertical-align: middle;
+  border: 0px;
+  border-radius: 50px;
+  color: #3E3E3E;
+}
+
+#orders_filter_wrapper .dropdown #dropdownMenuButton:focus, #orders_filter_wrapper .dropdown #dropdownMenuButton:active {
+  border: 3px solid #fff;
+  outline: 2px solid #FFE164;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#orders_filter_wrapper .dropdown .dropdown-menu {
+  border: 1px solid #E8E8E8;
+}
+
+#orders_filter {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+#orders_filter li {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#orders_filter li input {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+}
+/*# sourceMappingURL=orders_filter.css.map */

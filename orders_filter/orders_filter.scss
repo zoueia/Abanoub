@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap');
+$main-color : #2C5644;
+$sec-color : #FFE164;
+$third-color : #E8E8E8;
+$imp-hint : #186273;
+$alerts-color : #FE6969;
+$text-color: #3E3E3E;
+$white-color : #fff;
+$black-color : #000;
+$input-focus : #EBFFF6;
+$hover-button :#40705b;
+
+html { 
+       font-family: 'Inter', sans-seri;
+     } 
+
+body,span,button,div { font-size: 1.6rem; font-weight: normal; color: $main-color;}
+h1 { font-size: 2.5rem; font-weight: bold; }
+.small_font { font-size: 1.4rem; font-weight: normal; }      
+
+
+*, *:before, *:after, body {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+  }
+
+  button{
+      width: 100%;
+      padding: 10px;
+      border-radius: 50px;
+      border: 0px;
+      background-color: $main-color;
+  }
+
+  span{
+    color: $text-color;
+    }
+
+  #orders_filter_wrapper{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 7.4vw;
+    color: $text-color;
+    .dropdown{
+      #dropdownMenuButton{
+        background-color: $sec-color;
+        width: auto;
+        vertical-align: middle;
+        border: 0px;
+        border-radius: 50px;
+        color: $text-color;
+        &:focus,&:active{
+          border: 3px solid $white-color;
+          outline: 2px solid $sec-color;
+          box-shadow: none;
+        }
+      }
+      .dropdown-menu{
+        border: 1px solid $third-color;
+      }
+    }
+  }
+
+#orders_filter{
+    flex-grow: 1;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    li{
+        flex-grow: 1;
+        input{
+          width: 15px;
+          height: 15px;
+          margin: 0 5px;
+        }
+    }
+}
+
+
+
