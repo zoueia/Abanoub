@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap');
+$main-color : #2C5644;
+$sec-color : #FFE164;
+$third-color : #E8E8E8;
+$imp-hint : #186273;
+$alerts-color : #FE6969;
+$text-color: #3E3E3E;
+$white-color : #fff;
+$black-color : #000;
+$input-focus : #EBFFF6;
+$hover-button :#40705b;
+
+html { 
+       font-family: 'Inter', sans-seri;
+     } 
+
+body,span,button,div { font-size: 1.6rem; font-weight: normal; color: $main-color;}
+h1 { font-size: 2.5rem; font-weight: bold; }
+.small_font { font-size: 1.4rem; font-weight: normal; }      
+
+
+*, *:before, *:after {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+  }
+
+  button{
+      width: 100%;
+      padding: 10px;
+      border-radius: 50px;
+      border: 0px;
+      background-color: $main-color;
+  }
+
+  span{
+    color: $text-color;
+    }
+
+    #cart_card_wrapper{
+      span{
+        font-weight: 500;
+      }
+      #item_card{
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        padding: 5rem 7.4vw;
+        .price_offers{
+          text-align: end;
+          display: flex;
+          flex-direction: column;
+          .price{
+            font-weight: 900;
+          }
+          .offer{
+            margin-top: 1rem;
+            img{
+              position: absolute;
+              right: -3px;
+            }
+          }
+        }
+        .card_details{
+          display: flex;
+          flex-direction: column;
+          margin-right: 100px;
+          .item_title{
+            font-weight: 900;
+            height: 20rem;
+            overflow:hidden;
+            text-overflow:ellipsis; 
+            .item_dis{
+              font-weight: 500;
+            }
+          }
+          .plus_item{
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            font-weight: 900;
+            .plus_min{
+              button{
+                width: auto;
+                background-color: transparent;
+                font-weight: 900;
+                &:focus{
+                  outline: none;
+                }
+              }
+              background-color: $third-color;
+              padding: 0 5px;
+              border-radius: 50px;
+              margin-right: 1.5rem;
+            }
+            .remove_item{
+              display: flex;
+              align-items: center;
+              img{
+                padding-right: 5px;
+              }
+              button{
+                color: $imp-hint;
+                background-color: transparent;
+                padding: 0;
+                font-weight: 500;
+                &:hover{
+                  text-decoration: underline;
+                }
+                &:focus{
+                  outline: none;
+                }
+              }
+            }
+            .stock_state{
+              flex-grow: 1;
+              text-align: end;
+              color: $imp-hint;
+              padding-right: 3rem;
+            }
+          }
+        }
+        .item_image{
+          max-width: 250px;
+          margin-right: 2rem;
+        }
+      }
+    }

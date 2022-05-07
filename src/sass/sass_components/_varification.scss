@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap');
+$main-color : #2C5644;
+$sec-color : #FFE164;
+$third-color : #E8E8E8;
+$imp-hint : #186273;
+$alerts-color : #FE6969;
+$text-color: #3E3E3E;
+$white-color : #fff;
+$black-color : #000;
+$input-focus : #EBFFF6;
+$hover-button :#40705b;
+
+html { 
+       font-family: 'Inter', sans-seri;
+     } 
+
+body,span,button,div { font-size: 1.6rem; font-weight: normal; color: $main-color;}
+h1 { font-size: 2.5rem; font-weight: bold; }
+.small_font { font-size: 1.4rem; font-weight: normal; }      
+
+
+*, *:before, *:after, body {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+  }
+
+  button{
+      width: 100%;
+      padding: 10px;
+      border-radius: 50px;
+      border: 0px;
+      background-color: $main-color;
+  }
+
+  span{
+    color: $text-color;
+    }
+
+#verifyPhone_payment_wrapper{
+    display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+    // min-height: 100vh;
+    margin: 5rem 0;
+    #verifyPhone_payment{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .pack_button{
+            display: flex;
+            align-items: center;
+            input{
+                width: 100%;
+                padding: 10px 20px;
+                background: $third-color;
+                border-radius: 50px 0px 0px 50px;
+                color: $text-color;
+                border: 0;
+            }
+            input:focus{
+                outline: 2px solid $input-focus;
+            }
+            .verify{
+                background-color: $sec-color;
+                color: $text-color;
+                border-radius: 0px 50px 50px 0px;
+                width: fit-content;
+                flex-shrink: 0;
+                border: 1px solid $sec-color;
+                &:active{
+                    border: 0;
+                }
+            }
+        }
+        .error{
+            color: $alerts-color;
+            font-size: 1.4rem;
+        }
+        .the_action{
+            font-weight: 500;
+        }
+        span{
+            margin: 8px;
+        }
+    }
+}
+
